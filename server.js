@@ -2,11 +2,12 @@ const express = require('express');
 const app = express();
 const PORT = 3001;
 const path = require('path');
-// const notesRoute = require('./routes');
+const apiRoute = require('./routes');
 
 app.use(express.static('public'));
 
-// app.use('/notes', notesRoute);
+
+app.use('/api', apiRoute);
 
 app.get('/notes', (req, res) => {
     // res.send('GET to /notes works now');
