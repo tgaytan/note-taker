@@ -3,6 +3,7 @@ const express = require('express');
 const api = require('express').Router();
 const data = require('../db/db.json');
 const fs = require('fs');
+const generateUniqueId = require('generate-unique-id');
 
 api.use(express.json());
 api.use(express.urlencoded({ extended: true }));
@@ -19,8 +20,14 @@ api.post('/notes', (req, res) => {
     // console.log(typeof req.body);
     data.push(req.body);
     // console.log(data);
+
+    for (const aNote of data) {
+        aNote.id = generateUniqueId();
+    }
+
     dataString = JSON.stringify(data);
-    // console.log(dataString);
+    console.log(data);
+    console.log(dataString);
     // console.log(typeof dataString);
     // res.send('POST to /notes works now');
     // console.log(__dirname);
