@@ -14,39 +14,23 @@ After downloading the files from this repo, run "npm -i" to install the required
 1.  Access the application using either of the two methods
     a.  Open a browser and navigate to 
     b.  Launch the application by running "node server.js", open a browser, and navigate to http://localhost.com:3001
-2.  Select the "Get Started" button.  Screenshot below.
+2.  Select the "Get Started" button to be taken to the page to add and delete notes.  Refer to the screenshots below
+![notePage1](images/notePage1.png)
+![notePage2](images/notePage2.png)
+3.  The following buttons can be used in the webpage
+    - Save Note: This button saves your note and writes it to json file.  This button only appears after you have entered text in both fields for the note.
+    - Clear Form: This button will clear out any text you enetered.  It only appears after you have typed in text.
+    - New Note: This button will clear out the note that is currently displayed and allow the a new note to be entered
+4.  Once a note is saved, it is displayed in a list on the left side of the page and its details can be obtained by selecting the note.
 
-![alt text](assets/images/screenshot.png)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+The code for the web page was provided by edEx.  This is the repo where the starter code was provided: https://github.com/coding-boot-camp/miniature-eureka
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-Badges aren't necessary, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+N/A
 
 ## Tests
 
