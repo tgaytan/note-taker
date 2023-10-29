@@ -51,6 +51,12 @@ api.post('/notes', (req, res) => {
 
 api.delete(`/notes/:id`, (req, res) => {
     // console.log(req.params.id)
+    fs.readFile(`${__dirname}/../db/db.json`, 'utf8', (err, data) => {
+        err
+          ?  console.error(err)
+          :  jsonData = JSON.parse(data)
+    });
+   
     for (const aNote of jsonData) {
         if (req.params.id === aNote.id) {
             console.log('matching id');
@@ -59,7 +65,13 @@ api.delete(`/notes/:id`, (req, res) => {
             jsonData.splice(index, 1);
         }
     }
-    res.send('sending text for now');
+    dataString = JSON.stringify(jsonData);
+    fs.writeFile(`${__dirname}/../db/db.json`, dataString, err => {
+        err 
+          ? console.error(err)
+          : console.log("success")
+    });
+    res.send('delete successful');
 });
 
 module.exports = api;
