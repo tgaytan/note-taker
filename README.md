@@ -7,12 +7,14 @@ This is an application that you can use to store notes and delete them when they
 
 ## Installation
 
-After downloading the files from this repo, run "npm -i" to install the required packages.  If the application is accessed at , no installation is required.
+If the application is accessed at https://limitless-plateau-73449-28f3721d3414.herokuapp.com/, no installation is required.
+
+To run the application locally, download the files from this repo and run "npm i" to install the required node packages.
 
 ## Usage
 
 1.  Access the application using either of the two methods
-    a.  Open a browser and navigate to 
+    a.  Open a browser and navigate to https://limitless-plateau-73449-28f3721d3414.herokuapp.com/
     b.  Launch the application by running "node server.js", open a browser, and navigate to http://localhost.com:3001
 2.  Select the "Get Started" button to be taken to the page to add and delete notes.  Refer to the screenshots below
 ![notePage1](images/notePage1.png)
@@ -31,7 +33,3 @@ The code for the web page was provided by edEx.  This is the repo where the star
 ## License
 
 N/A
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
